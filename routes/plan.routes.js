@@ -10,11 +10,11 @@ module.exports = app => {
     // // Retrieve a single Plan with id
     // router.get("/:id", plans.findOne);
     // // Update a Plan with id
-    // router.put("/:id", plans.update);
+    router.put("/:id", plans.update);
     // // Delete a Plan with id
-    // router.delete("/:id", plans.delete);
+    router.delete("/:id", plans.delete);
     // // Create a new Plan
-    // router.delete("/", plans.deleteAll);
+    router.delete("/", plans.deleteAll);
     app.use('/api/plans', router);
 };
     
